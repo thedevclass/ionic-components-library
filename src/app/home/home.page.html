@@ -1,9 +1,54 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
+  
   <ion-toolbar>
     <ion-title>
-      Components Library
+      Stories
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
+
+  <ion-item lines="none" class="ion-margin-bottom">
+    <ion-slides [options]="custom" class="ion-padding">
+      <ion-slide>
+        <ion-avatar class="me" id="notification-button">
+          <ion-badge>
+            <ion-icon name="add"></ion-icon>
+          </ion-badge>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+        </ion-avatar>
+      </ion-slide>
+      <ion-slide>
+        <ion-avatar>
+          <img src="https://images.unsplash.com/photo-1568967729548-e3dbad3d37e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+        </ion-avatar>
+      </ion-slide>
+      <ion-slide>
+        <ion-avatar>
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+        </ion-avatar>
+      </ion-slide>
+      <ion-slide>
+        <ion-avatar>
+          <img src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+        </ion-avatar>
+      </ion-slide>
+      <ion-slide>
+        <ion-avatar>
+          <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+        </ion-avatar>
+      </ion-slide>
+      <ion-slide>
+        <ion-avatar>
+          <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+        </ion-avatar>
+      </ion-slide>
+    </ion-slides>
+  </ion-item>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">

@@ -1,1 +1,33 @@
- 
+ion-header {
+
+  ion-item {
+    --padding-start: 0px;
+    --inner-padding-end: 0px;
+  }
+
+  ion-avatar {
+    padding: 2px;
+    border: 2px solid #97cdec;
+  }
+
+  .me {
+    border: 2px solid #229ce2;
+    position: relative;
+    overflow: visible !important;
+
+    ion-badge {
+      background-color: #229ce2;
+      position: absolute;
+      top: 0;
+      left: -5px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+
+      ion-icon {
+        font-size: 16px;
+      }
+    }
+
+  }
+}

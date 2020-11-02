@@ -9,4 +9,9 @@ export class HomePage {
 
   constructor() {}
 
+  custom = {
+    centeredSlides: false,
+    slidesPerView: 4.5,
+  }
+
 }
