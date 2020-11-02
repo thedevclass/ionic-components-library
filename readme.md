@@ -1,4 +1,4 @@
-# Puma Shoes Card
+# Stories
 Made by ionic 5 and angular 9 <br>
 https://thedevclass.com/component/stories/
 
