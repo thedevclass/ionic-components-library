@@ -1,11 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Components Library
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+
+  <ion-card class="ion-padding ion-text-uppercase">
+    <ion-card-header>
+      <ion-card-title>Puma Shoes</ion-card-title>
+      <ion-card-subtitle>THE best in the marketplace</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+
+      <img src="https://unsplash.com/photos/IJjfPInzmdk/download?force=true&w=1920"/>
+
+      <ion-row class="ion-align-items-center">
+        <ion-col size="12" class="ion-text-center">
+         <ion-button fill="clear" size="small" color="tertiary">
+          <ion-icon slot="icon-only" name="ellipse"></ion-icon>
+         </ion-button>
+         <ion-button fill="clear" size="small" color="warning">
+          <ion-icon slot="icon-only" name="ellipse"></ion-icon>
+         </ion-button>
+         <ion-button fill="clear" size="small" color="danger">
+          <ion-icon slot="icon-only" name="ellipse"></ion-icon>
+         </ion-button>
+         <ion-button fill="clear" size="small" color="success">
+          <ion-icon slot="icon-only" name="ellipse"></ion-icon>
+         </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-align-items-center ion-margin-top">
+        <ion-col size="4">
+          <h2 class="price">40 OMR</h2>
+        </ion-col>
+        <ion-col size="8">
+          <ion-button expand="block" shape="round" fill="outline" color="dark">
+            Add to Cart
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      
+    </ion-card-content>
+  </ion-card>
   
 </ion-content>
