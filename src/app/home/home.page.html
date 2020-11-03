@@ -1,11 +1,87 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-title>
-      Components Library
+      WhatsApp
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
+
+  <ion-segment value="Chats">
+    <ion-segment-button value="camera" >
+      <ion-icon name="camera"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="Chats">
+      <ion-label>Chats</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Status">
+      <ion-label>Status</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Calls">
+      <ion-label>Calls</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="chatbox-ellipses"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <div class="ion-padding">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Habib Dev.</h2>
+        <p>Marhaba</p>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-right">
+        <p>03/11/2020</p>
+        <p>&nbsp;</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://images.unsplash.com/photo-1568967729548-e3dbad3d37e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Foo</h2>
+        <p> <ion-icon class="read" name="checkmark-done"></ion-icon> Hi</p>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-right">
+        <p>03/11/2020</p>
+        <p>&nbsp;</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=1.5" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Lorem</h2>
+        <p> <ion-icon name="headset"></ion-icon> Audio</p>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-right">
+        <p>03/11/2020</p>
+        <p>&nbsp;</p>
+      </ion-label>
+    </ion-item>
+  </div>
+
+
+
 </ion-content>
