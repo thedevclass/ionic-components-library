@@ -1,11 +1,47 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Components Library
-    </ion-title>
+    <ion-title>Custom Slides</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+
+
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/05.jpg">
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/04.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/03.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/02.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/images/01.jpg">
+      </ion-card>
+    </ion-slide>
+
+
+  </ion-slides>
+
+
 </ion-content>
