@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  burger = false;
+  sweet = true;
+  drink = true;
+
   constructor() {}
 
 }

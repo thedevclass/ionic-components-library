@@ -1,11 +1,148 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Components Library
+      Burger Time
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="4">
+        <ion-card [color]="burger? 'none': 'dark'" class="ion-text-center" (click)="burger= !burger">
+          <ion-button fill="clear" color="light" [disabled]="burger">
+            <ion-icon slot="icon-only" icon="assets/burger.svg"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card [color]="sweet? 'none': 'dark'" class="ion-text-center" (click)="sweet= !sweet">
+          <ion-button fill="clear" color="light" [disabled]="sweet">
+            <ion-icon slot="icon-only" icon="assets/cake.svg"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card [color]="drink? 'none': 'dark'" class="ion-text-center" (click)="drink= !drink">
+          <ion-button fill="clear" color="light" [disabled]="drink">
+            <ion-icon slot="icon-only" icon="assets/juice.svg"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+
+
+
+  <div class="ion-padding-vertical light ion-text-center">
+
+    <div class="title-div">
+      <h2 class="ion-padding-bottom w700">Special Testy Burger</h2>
+      <div class="rating">
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div class="img-div ion-margin-vertical">
+      <ion-img src="assets/burger.png"></ion-img>
+      <div class="price w700">
+        1.200 OMR
+      </div>
+    </div>
+    <div class="ion-padding-vertical">
+      <h4 class="ion-padding-bottom w500">Your Best Choice</h4>
+    </div>
+
+
+    <div class="title-div">
+      <h2 class="ion-padding-bottom w700">Big Double Burger</h2>
+      <div class="rating">
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light" disabled>
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div class="img-div ion-margin-vertical">
+      <ion-img src="assets/burger2.png"></ion-img>
+      <div class="price w700">
+        1.600 OMR
+      </div>
+    </div>
+    <div class="ion-padding-vertical">
+      <h4 class="ion-padding-bottom w500">Best Selling</h4>
+    </div>
+
+
+
+    <!-- <div class="title-div">
+      <h2 class="ion-padding-bottom w700">Burger Meal</h2>
+      <div class="rating">
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light">
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="light" disabled>
+          <ion-icon slot="icon-only" icon="assets/star.svg"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div class="img-div ion-margin-vertical">
+      <ion-img src="assets/burger3.png"></ion-img>
+      <div class="price w700">
+        1.500 OMR
+      </div>
+    </div>
+    <div class="ion-padding-vertical">
+      <h4 class="ion-padding-bottom w500">Best Value</h4>
+    </div> -->
+
+
+
+
+  </div>
+
+
 </ion-content>

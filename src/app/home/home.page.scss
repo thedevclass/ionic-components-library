@@ -1,1 +1,106 @@
- 
+ion-header {
+    
+    box-shadow: 0 2px 20px -3px #121015;
+
+    ion-toolbar {
+        --background: #121015;
+        ion-title {
+            color: #ffffff;
+            font-weight: 600;
+            font-family: 'Century Gothic';
+        }
+    }
+}
+
+ion-grid {
+    background: #121015;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    ion-col {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+ion-content {
+    --background: #121015;
+    .light {
+        color: #f4f5f8;
+        font-family: 'Century Gothic';
+    }
+}
+
+ion-card {
+    border: 3px solid #1f1e25;
+    border-radius: 16px;
+    transition: 200ms all ease-in-out;
+
+    ion-button {
+        pointer-events: none;
+        transition: 150ms all ease-in-out;
+    }
+}
+
+.img-div {
+    
+    background: rgba($color: #ffffff, $alpha: 0.03);
+    height: 100px;
+
+    ion-img {
+        width: 180px;
+        margin: auto;
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    }
+
+    .price {
+        display: inline-block;
+        padding: 8px;
+        border-radius: 14px;
+        background: rgba($color: #ffffff, $alpha: 0.8);
+        color: #333;
+        position: relative;
+        bottom: 80px;
+        right: 50px;
+        font-size: 14px;
+    }
+
+}
+
+.title-div {
+    // background: rgba($color: #ffffff, $alpha: 0.01);
+    // height: 88px;
+    // padding-top: 20px;
+
+    h2 {
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    .rating {
+        ion-button {
+            margin: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+h4 {
+    padding-top: 20px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,.01));
+}
+
+.w700 {
+    font-weight: 700;
+}
+
+.w600 {
+    font-weight: 600;
+}
+
+.w500 {
+    font-weight: 500;
+}
+
+.w400 {
+    font-weight: 400;
+}
